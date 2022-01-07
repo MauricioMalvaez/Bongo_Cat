@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="e">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BongoCat</title>
+    <link rel="stylesheet" href="/cat-styles.css">
+    <link rel="shortcut icon" href="/cat.ico" type="image/x-icon">
+    <title>Bongo Cat</title>
+</head>
+<body>
+    <section class="gato">
+        <div class="contenedor">
+            <img src="/bongo1.png" alt="" class="" id="main">
+            <img src="/bongor.png" alt="" class="invisible" id="imgL">
+            <img src="/bongol.png" alt="" class="invisible" id="imgR">
+        
+    </section>
+        
+ <section class="botones">
+    <button type="button" id="left-button" onclick="changeLeft">RIGHT</button>
+    <button type="button" id="right-button">LEFT</button>
+ </section>
+          
+         
+    
+      </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+          document.getElementById("left-button").addEventListener("click", myFunctionR);
+
+function myFunctionL() {
+  document.getElementById("main").classList.add("invisible");
+  document.getElementById("imgL").classList.remove("invisible");
+
+  var audio = new Audio('/Bongo1.mp3');
+  audio.play();
+
+setTimeout( function(){
+  document.getElementById("imgL").classList.add("invisible");
+  document.getElementById("main").classList.remove("invisible");
+},100);
+
+}
+
+
+document.getElementById("right-button").addEventListener("click", myFunctionL);
+function myFunctionR() {
+  document.getElementById("main").classList.add("invisible");
+  document.getElementById("imgR").classList.remove("invisible");
+
+  var audio = new Audio('/Bongo2.mp3');
+  audio.play();
+
+setTimeout( function(){
+  document.getElementById("imgR").classList.add("invisible");
+  document.getElementById("main").classList.remove("invisible");
+},100);
+
+}
+
+      </script>
+</body>
+</html>
+

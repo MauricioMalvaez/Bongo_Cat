@@ -1,0 +1,48 @@
+.invisible{
+    display: none;
+  }
+
+  body{
+      background-color: beige;
+  }
+  img{
+    width: 30%;
+  }
+  .contenedor{
+    background-color: beige;
+    text-align: center;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-top:6%;
+  }
+
+  .botones{
+    text-align: center;
+  }
+  button{
+    background-color: #4CAF50;
+    font-size: 30px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    
+
+  }
+
+  button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  
+  
+  
